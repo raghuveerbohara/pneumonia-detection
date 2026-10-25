@@ -1,0 +1,17 @@
+{
+  "name": "Pneumonia Detection Streamlit",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "remoteUser": "appuser",
+  "overrideCommand": true,
+  "forwardPorts": [8501],
+  "portsAttributes": {
+    "8501": {
+      "label": "Chest X-ray Streamlit",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "python restore_model.py"
+}
