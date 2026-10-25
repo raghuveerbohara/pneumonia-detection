@@ -1,0 +1,16 @@
+{
+  "model_sha256": "d1854e9594f5b9465a287d0a147b3a32d850073d6f9aa815e9df96d269cd0245",
+  "model_bytes": 30244706,
+  "parts": [
+    {
+      "filename": "best_model.keras.part01",
+      "bytes": 16777216,
+      "sha256": "3e2bec25a2ce11ede64764181e4d1c2a1f7c6f716eb9dfbcf3354acad4da48d7"
+    },
+    {
+      "filename": "best_model.keras.part02",
+      "bytes": 13467490,
+      "sha256": "b177c0e23e058b0a7fcaabc8be34082b6e5ad2a77b05d0478ce9238f19a77777"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+.git
+__pycache__
+.venv
+deployment_evidence
+*.dcm
+*.log
+models/best_model.keras
+models/best_model.partial

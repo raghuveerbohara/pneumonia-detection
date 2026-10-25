@@ -1,0 +1,9 @@
+__pycache__/
+.venv/
+.pytest_cache/
+models/best_model.keras
+models/best_model.partial
+deployment_evidence/
+*.dcm
+*.log
+.env

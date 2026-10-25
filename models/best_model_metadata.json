@@ -1,0 +1,41 @@
+{
+  "model": "DenseNet121_regularized3",
+  "threshold": 0.41401687264442444,
+  "minimum_validation_recall": 0.8,
+  "thresholds": {
+    "Scratch CNN": 0.46444109082221985,
+    "MobileNetV2_basic": 0.4461088478565216,
+    "MobileNetV2_extended3": 0.395918607711792,
+    "DenseNet121_basic": 0.4293542802333832,
+    "DenseNet121_extended3": 0.3618004620075226,
+    "MobileNetV2_regularized3": 0.40163183212280273,
+    "DenseNet121_regularized3": 0.41401687264442444
+  },
+  "selection_rule": "validation precision at recall >= 0.80; ties: abnormal FPR, AP, parameters",
+  "selected_validation_metrics": {
+    "Model": "DenseNet121_regularized3",
+    "Threshold": 0.4140168726,
+    "Accuracy": 0.7576817387,
+    "Balanced accuracy": 0.7732365498,
+    "Precision": 0.4775429326,
+    "Recall": 0.8015521064,
+    "Specificity": 0.7449209932,
+    "F1-score": 0.5985099338,
+    "ROC AUC": 0.85306006,
+    "Average precision": 0.6343544414,
+    "Normal FPR": 0.0233433735,
+    "Abnormal-negative FPR": 0.4286520023,
+    "TN": 2310,
+    "FP": 791,
+    "FN": 179,
+    "TP": 723,
+    "Parameters": 7174980
+  },
+  "binary_labels": {
+    "0": "No lung opacity",
+    "1": "Lung opacity"
+  },
+  "input_contract": "preprocessed grayscale float32 [0,1], shape (224,224,1)",
+  "preprocessing": "DICOM polarity, bilinear resize, per-image min-max; see preprocess_image",
+  "score_note": "uncalibrated opacity score, not confirmed pneumonia probability"
+}
